@@ -15,5 +15,6 @@ remotes::install_github("ropensci/NLMR")
 
 
 Then install MNLM from the Github repository.
-
- remotes::install_github("ianjwang/MNLM-test/MNLM")
+```r
+remotes::install_github("ianjwang/MNLM-test/MNLM")
+```
