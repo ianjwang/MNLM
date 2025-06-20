@@ -6,16 +6,16 @@
 The MNLM package can be downloaded and installed from Github.
 
 First install the required dependencies, using the remotes package.
-<pre>
- "'r
- install.packages("remotes")
+<pre> ```r 
+  install.packages("remotes")
  
  remotes::install_github("cran/RandomFieldsUtils")
  
  remotes::install_github("cran/RandomFields")
  
- remotes::install_github("ropensci/NLMR")'"
-</pre>
+ remotes::install_github("ropensci/NLMR")``` </pre>
+
+
 
 
 Then install MNLM from the Github repository.
