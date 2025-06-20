@@ -33,6 +33,8 @@ perlin <- mnlm_perlin(nlayers = 2, r = 0.6, nrow = 50, ncol = 50,
 terra::plot(perlin)
 ```
 
+![Output](images/perlin1.png)
+
 We can even specify the parameters for individual layers within a set. For example, we can change both the octaves and frequency in the perlin noise algorithm to see how they change the structure of the resulting NLM layers by passing vectors to the 'frequency' and 'octaves' arguments in the mnlm_perlin() function.
 ```{r}
 perlin <- mnlm_perlin(nlayers = 4, r = 0.5, nrow = 50, ncol = 50,
@@ -41,3 +43,4 @@ terra::plot(perlin, main = c("freq = 0.1, octaves = 2", "freq = 0.3, octaves = 2
                              "freq = 0.1, octaves = 6", "freq = 0.3, octaves = 6"))
 ```
 
+![Output](images/perlin2.png)
