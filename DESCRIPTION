@@ -1,7 +1,7 @@
 Package: MNLM
 Type: Package
 Title: Generating Multiple Correlated Neutral Landscape Models
-Version: 1.0
+Version: 0.1
 Authors@R: person("Ian", "Wang", email = "ianwang@berkeley.edu",
                   role = c("aut", "cre"))
 Description: A toolkit for generating sets of neutral landscape models (NLMs) with specified correlations. NLMs can be generated using a variety of algorithms, and the spatial structure of the NLMs are maintained while generating additional raster surfaces with user-specified correlations.
