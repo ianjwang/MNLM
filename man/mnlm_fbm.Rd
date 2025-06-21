@@ -12,8 +12,7 @@ mnlm_fbm(
   resolution = 1,
   fract_dim = 1,
   user_seed = NULL,
-  rescale = TRUE,
-  ...
+  rescale = TRUE
 )
 }
 \arguments{
@@ -32,8 +31,6 @@ mnlm_fbm(
 \item{user_seed}{Set seed for simulation (optional)}
 
 \item{rescale}{If TRUE (default), raster values are scaled from 0 to 1}
-
-\item{...}{character, logical, or numeric (optional). Additional arguments to be passed to RandomFields::RFoptions (n.b. if using a fractal dimension between ~ 1.6 and 1.9, one must set the option modus_operandi = "sloppy").}
 }
 \description{
 Multiple neutral landscape models using fractal Brownian motion
