@@ -21,7 +21,6 @@
 #' Martin Schlather, Alexander Malinowski, Peter J. Menck, Marco Oesting, Kirstin Strokorb (2015). nlm_fBm. Journal of Statistical Software, 63(8), 1-25. URL http://www.jstatsoft.org/v63/i08/.
 #' @importFrom NLMR nlm_fbm
 #' @import terra
-#' @import RandomFields
 #' @export
 mnlm_fbm <- function(nlayers = 2, r, ncol, nrow, resolution = 1, fract_dim = 1, user_seed = NULL, rescale = TRUE, ...){
   if(length(r) == 1) r <- rep(r, nlayers - 1)

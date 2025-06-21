@@ -34,15 +34,15 @@ mnlm_perlin(
 
 \item{fractal}{The fractal type to use. Options are 'none', 'fbm' (default), 'billow', or 'rigid-multi'. It is suggested that you experiment with the different types to get a feel for how they behaves.}
 
-\item{octaves}{The number of noise layers used to create the fractal noise. Ignored if fractal = 'none'.}
+\item{octaves}{The number of noise layers used to create the fractal noise. Ignored if fractal = 'none'. Can be set individually for each layer.}
 
-\item{lacunarity}{The frequency multiplier between successive noise layers when building fractal noise. Ignored if fractal = 'none'.}
+\item{lacunarity}{The frequency multiplier between successive noise layers when building fractal noise. Ignored if fractal = 'none'. Can be set individually for each layer.}
 
-\item{gain}{The relative strength between successive noise layers when building fractal noise (default = 0.5). Ignored if fractal = 'none'.}
+\item{gain}{The relative strength between successive noise layers when building fractal noise (default = 0.5). Ignored if fractal = 'none'. Can be set individually for each layer.}
 
 \item{pertubation}{The pertubation to use. Either 'none' (default), 'normal', or 'fractal'. Defines the displacement (warping) of the noise, with 'normal' giving a smooth warping and 'fractal' giving a more erratic warping.}
 
-\item{pertubation_amplitude}{The maximal pertubation distance from the origin (default = 1). Ignored if pertubation = 'none'.}
+\item{pertubation_amplitude}{The maximal pertubation distance from the origin (default = 1). Ignored if pertubation = 'none'. Can be set individually for each layer.}
 }
 \description{
 Multiple neutral landscape models using Perlin noise

@@ -28,11 +28,11 @@ mnlm_mpd(
 
 \item{resolution}{The resolution of the rasters (default = 1)}
 
-\item{roughness}{Controls the level of spatial autocorrelation (not equal to the Hurst exponent; default = 0.5)}
+\item{roughness}{Controls the level of spatial autocorrelation (not equal to the Hurst exponent; default = 0.5). Can be set individually for each layer.}
 
-\item{rand_dev}{Initial standard deviation for the displacement step (default = 1) that sets the scale of the overall variance in the resulting landscape}
+\item{rand_dev}{Initial standard deviation for the displacement step (default = 1) that sets the scale of the overall variance in the resulting landscape. Can be set individually for each layer.}
 
-\item{torus}{Logical value indicating whether the algorithm should be simulated on a torus (default = FALSE)}
+\item{torus}{Logical value indicating whether the algorithm should be simulated on a torus (default = FALSE). Can be set individually for each layer.}
 
 \item{user_seed}{Set seed for simulation}
 

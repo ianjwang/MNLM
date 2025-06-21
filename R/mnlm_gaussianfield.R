@@ -22,7 +22,6 @@
 #' Kéry & Royle (2016) Applied Hierarchical Modeling in Ecology Chapter 20
 #' @importFrom NLMR nlm_gaussianfield
 #' @importFrom terra ext rast
-#' @import RandomFields
 #' @export
 mnlm_gaussianfield <- function(nlayers = 2, r, ncol, nrow, resolution = 1, autocorr_range = 10, mag_var = 5, nug = 0.2, mean = 0.5, user_seed = NULL, rescale = TRUE){
   if(length(r) == 1) r <- rep(r, nlayers - 1)

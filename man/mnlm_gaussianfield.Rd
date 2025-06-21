@@ -29,11 +29,11 @@ mnlm_gaussianfield(
 
 \item{resolution}{The resolution of the rasters (default = 1)}
 
-\item{autocorr_range}{Maximum range (in raster units) of spatial autocorrelation (default = 10)}
+\item{autocorr_range}{Maximum range (in raster units) of spatial autocorrelation (default = 10). Can be set individually for each layer.}
 
-\item{mag_var}{Magnitude of variation across the raster (default = 5)}
+\item{mag_var}{Magnitude of variation across the raster (default = 5). Can be set individually for each layer.}
 
-\item{nug}{Magnitude of variation in the scale of autocorr_range; smaller values generate more homogeneous rasters (default = 0.2)}
+\item{nug}{Magnitude of variation in the scale of autocorr_range; smaller values generate more homogeneous rasters (default = 0.2). Can be set individually for each layer.}
 
 \item{mean}{Mean value over the field (default = 0.5)}
 

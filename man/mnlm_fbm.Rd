@@ -27,7 +27,7 @@ mnlm_fbm(
 
 \item{resolution}{The resolution of the rasters (default = 1)}
 
-\item{fract_dim}{The fractal dimension of the process (default = 1)}
+\item{fract_dim}{The fractal dimension of the process (default = 1). Can be set individually for each layer.}
 
 \item{user_seed}{Set seed for simulation (optional)}
 

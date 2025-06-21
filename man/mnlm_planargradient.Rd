@@ -4,15 +4,7 @@
 \alias{mnlm_planargradient}
 \title{Multiple neutral landscape models using planar gradients}
 \usage{
-mnlm_planargradient(
-  nlayers = 2,
-  r,
-  ncol,
-  nrow,
-  resolution = 1,
-  direction = NA,
-  rescale = TRUE
-)
+mnlm_planargradient(nlayers = 2, r, ncol, nrow, resolution = 1, rescale = TRUE)
 }
 \arguments{
 \item{nlayers}{The number of NLMs to generate.}
@@ -24,8 +16,6 @@ mnlm_planargradient(
 \item{nrow}{The number of rows in the rasters.}
 
 \item{resolution}{The resolution of the rasters (default = 1).}
-
-\item{direction}{Direction of the gradient (between 0 and 360 degrees). If unspecified the direction is determined randomly.}
 
 \item{rescale}{If TRUE (default), raster values are scaled from 0 to 1.}
 }
