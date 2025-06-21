@@ -8,7 +8,6 @@
 #' @param fract_dim The fractal dimension of the process (default = 1). Can be set individually for each layer.
 #' @param user_seed Set seed for simulation (optional)
 #' @param rescale If TRUE (default), raster values are scaled from 0 to 1
-#' @param ... character, logical, or numeric (optional). Additional arguments to be passed to RandomFields::RFoptions (n.b. if using a fractal dimension between ~ 1.6 and 1.9, one must set the option modus_operandi = "sloppy").
 #' @details
 #' Generates multiple neutral landscape models using fractional Brownian motion, an extension of Brownian motion in which the correlation between steps is controlled by frac_dim.
 #' Higher values of frac_dim produce smoother, more correlated surfaces, while lower value produce rougher, less correlated surfaces.
@@ -22,7 +21,7 @@
 #' @importFrom NLMR nlm_fbm
 #' @import terra
 #' @export
-mnlm_fbm <- function(nlayers = 2, r, ncol, nrow, resolution = 1, fract_dim = 1, user_seed = NULL, rescale = TRUE, ...){
+mnlm_fbm <- function(nlayers = 2, r, ncol, nrow, resolution = 1, fract_dim = 1, user_seed = NULL, rescale = TRUE){
   if(length(r) == 1) r <- rep(r, nlayers - 1)
   if(length(fract_dim) == 1) fract_dim <- rep(fract_dim, nlayers)
 
