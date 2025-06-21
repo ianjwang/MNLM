@@ -1,6 +1,10 @@
-# MNLM
-
-Multiple Neutral Landscape Models
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+    <h1 style="margin-bottom: 0;">MNLM</h1>
+    <p style="margin-top: 0;"><em>Generating Multiple Correlated Neutral Landscape Models</em></p>
+  </div>
+  <img src="images/MNLM_logo4.png" alt="MNLM logo" height="80">
+</div>
 
 # Installation
 
