@@ -30,11 +30,6 @@ mnlm_fbm <- function(nlayers = 2, r, ncol, nrow, resolution = 1, fract_dim = 1, 
     stop("All values of 'fract_dim' must be ≤ 2 for nlm_fbm(). You supplied: ", paste(fract_dim, collapse = ", "))
   }
 
-  # Check RandomFieldsUtils
-  if (requireNamespace("RandomFieldsUtils", quietly = TRUE)) {
-    RandomFieldsUtils::RFoptions(installNrun = FALSE)
-  }
-
   for(i in 1:nlayers){
     nlm <- terra::rast(NLMR::nlm_fbm(ncol = ncol, nrow = nrow, resolution = resolution, fract_dim = fract_dim[i], rescale = rescale))
     if(i == 1) nlm.s <- nlm
