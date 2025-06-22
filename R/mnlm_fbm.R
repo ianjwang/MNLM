@@ -45,6 +45,7 @@ mnlm_fbm <- function(nlayers = 2, r, ncol, nrow, resolution = 1, fract_dim = 1, 
   }
 
   names(nlm.s[[1]]) <- "nlm.1"
+  message("NLMs generated successfully!")
   return(nlm.s)
 
 }
