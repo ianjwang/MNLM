@@ -15,7 +15,7 @@
 #' @examples
 #' NLMs <- mnlm_fbm(nlayers = 3, r = c(0.3, 0.6), ncol = 20, nrow = 20)
 #' @references
-#' Sciaini, M., Fritsch, M., Scherer, C., & Simpkins, C. E. (2018). NLMR and landscapetools: An integrated environment for simulating and modifying neutral landscape models in R. Methods in Ecology and Evolution, 9(11), 2240–2248. doi:10.1111/2041-210X.13076
+#' Sciaini, M., Fritsch, M., Scherer, C., Simpkins, C. E. (2018). NLMR and landscapetools: An integrated environment for simulating and modifying neutral landscape models in R. Methods in Ecology and Evolution, 9(11), 2240–2248. doi:10.1111/2041-210X.13076
 #' Travis, J.M.J. & Dytham, C. (2004). A method for simulating patterns of habitat availability at static and dynamic range margins. Oikos , 104, 410–416.
 #' Martin Schlather, Alexander Malinowski, Peter J. Menck, Marco Oesting, Kirstin Strokorb (2015). nlm_fBm. Journal of Statistical Software, 63(8), 1-25. URL http://www.jstatsoft.org/v63/i08/.
 #' @importFrom NLMR nlm_fbm
@@ -25,9 +25,9 @@ mnlm_fbm <- function(nlayers = 2, r, ncol, nrow, resolution = 1, fract_dim = 1, 
   if(length(r) == 1) r <- rep(r, nlayers - 1)
   if(length(fract_dim) == 1) fract_dim <- rep(fract_dim, nlayers)
 
-  # Check that all fractal dimensions are ≤ 2
+  # Check that all fractal dimensions are <= 2
   if(any(fract_dim > 2)) {
-    stop("All values of 'fract_dim' must be ≤ 2 for nlm_fbm(). You supplied: ", paste(fract_dim, collapse = ", "))
+    stop("All values of 'fract_dim' must be <= 2 for nlm_fbm(). You supplied: ", paste(fract_dim, collapse = ", "))
   }
 
   for(i in 1:nlayers){
