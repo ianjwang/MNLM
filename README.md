@@ -5,7 +5,7 @@
   <em>Generating Multiple Correlated Neutral Landscape Models</em>
 </td>
 <td style="text-align: right;">
-  <img src="images/MNLM_logo4.png" alt="MNLM logo" height="160">
+  <img src="images/MNLM_logo4.png" alt="MNLM logo" height="200">
 </td>
 </tr>
 </table>
@@ -26,7 +26,7 @@ remotes::install_github("ropensci/NLMR")
 Then install MNLM from the Github repository.
 
 ``` r
-remotes::install_github("ianjwang/MNLM")
+remotes::install_github("ANON_URL/MNLM")
 ```
 
 # Running MNLM
